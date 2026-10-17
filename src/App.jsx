@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import React from 'react'
 import  Card from "./components/Card.jsx"
-
+import "./components/Card.css"
 
 const Api = [{
     "id": 1,
@@ -96,11 +96,13 @@ const Api = [{
 
 export const App = () => {
 return(
-<>
-  <Card  tittle={Api[0].title} des={Api[0].description} prise={Api[0].price } img={Api[0].images[0]} />
-  <Card  tittle={Api[1].title} des={Api[1].description} prise={Api[1].price}  img={Api[1].images[0]} />
-  <Card  tittle={Api[2].title} des={Api[2].description} prise={Api[2].price}  img={Api[2].images[0]}/>
-  </>
+<div className='parent'>
+ {
+    Api.map(({id,title,description,price,images})=>{
+  return <Card   id={id} tittle={title} des={description} prise={price } img={images[0]} />
+  })
+ }
+</div>
 )
 }
 

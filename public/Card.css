@@ -1,3 +1,10 @@
-.card{
-    width: 18rem !important;
+.parent{
+    border: 1px solid black !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
 }
+/* .card{
+       border: 1px solid black !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+} */
