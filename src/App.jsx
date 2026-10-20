@@ -98,11 +98,11 @@ const Api = [{
 export const App = () => {
 return(
 <div className='parent'>
- {
+ {/* {
     Api.map(({id,title,description,price,images})=>{
   return <Card  key={id} id={id} tittle={title} des={description} prise={price } img={images[0]} />
   })
- }
+ } */}
 
  <Event />
 </div>
