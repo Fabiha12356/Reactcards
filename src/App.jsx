@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import React from 'react'
 import  Card from "./components/Card.jsx"
 import  Event from "./components/Event.jsx"
+import Props from './components/props.jsx';
 import "./components/Card.css"
 
 const Api = [{
@@ -105,6 +106,7 @@ return(
  } */}
 
  <Event />
+ <Props  name={"name"} f_name={"sohail"}/>
 </div>
 )
 }
